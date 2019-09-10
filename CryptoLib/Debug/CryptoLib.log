@@ -1,0 +1,5 @@
+﻿  DiffieHellman.cpp
+e:\prog\git\crypto\cryptolib\diffiehellman.cpp(18): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+e:\prog\git\crypto\cryptolib\diffiehellman.cpp(51): warning C4244: '=': conversion from 'unsigned __int64' to 'size_t', possible loss of data
+e:\prog\git\crypto\cryptolib\diffiehellman.cpp(66): warning C4244: '=': conversion from 'unsigned __int64' to 'size_t', possible loss of data
+  CryptoLib.vcxproj -> E:\Prog\GIT\Crypto\Debug\CryptoLib.exe
