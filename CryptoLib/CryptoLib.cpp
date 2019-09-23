@@ -4,8 +4,12 @@
 #include "pch.h"
 #include <iostream>
 #include "DiffieHellman.h"
+#include "RSA.h"
 #include <limits>
 
 int main()
 {
+	RSA a;
+	a.GenerateKeys();
+	int ca = 1;
 }

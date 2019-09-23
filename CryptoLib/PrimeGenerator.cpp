@@ -23,7 +23,7 @@ void PrimeGenerator::GeneratePrimes(unsigned int max_value)
 		bool isPrime = true;
 		for (size_t j = 0; j < this->Primes.size(); j++)
 		{
-			if (i % j == 0)
+			if (i % Primes[j] == 0)
 			{
 				isPrime = false;
 				break;
@@ -40,6 +40,11 @@ unsigned int PrimeGenerator::GetRandomPrime(unsigned int min_value, unsigned int
 	if (this->Primes.size() < 2)
 		return 2;
 	DRBG randGen;
+	unsigned int selectedValue = 0;
+	/*while ((min_value > 0 && selectedValue > min_value))
+	{
+
+	}*/
 	randGen.Instantiate(rand(), this->Primes.size());
 	unsigned int value = randGen.GenerateRandomInt();
 	while (value > this->Primes.size())
